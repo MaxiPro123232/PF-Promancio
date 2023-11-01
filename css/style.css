@@ -1,3 +1,471 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+header {
+  background-color: red;
+  width: 100%;
+  padding: 0.1rem;
+  justify-content: space-between;
+  align-items: center;
+  text-align: right;
+}
+
+.navBar {
+  display: flex;
+  list-style: none;
+  gap: 2.5rem;
+  align-items: center;
+  text-align: right;
+}
+.navBar li a {
+  color: white;
+  text-decoration: none;
+}
+.navBar li img {
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.nombreL {
+  text-decoration: solid;
+  text-align: left;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: red;
+  font-size: 4rem;
+}
+
+.divN {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2rem;
+}
+
+.imgL {
+  border-image: none;
+}
+
+.formuLari {
+  font-size: 2rem;
+}
+
+.buttoN {
+  background-color: black;
+  height: 2rem;
+  width: 10rem;
+  text-align: center;
+}
+.buttoN a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 1rem;
+  margin-top: 2rem;
+  font-size: 20px;
+}
+
+.imgF a img {
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  align-items: center;
+}
+
+footer {
+  width: 100%;
+  text-align: right;
+  padding: 0.5rem;
+  justify-content: space-between;
+}
+
+.mainComp {
+  font-size: 1rem;
+}
+
+.buttoNa {
+  background-color: rgb(255, 0, 0);
+  height: 2rem;
+  width: 10rem;
+  text-align: center;
+}
+.buttoNa a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.comprasBl {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  background-color: rgb(219, 213, 203);
+  height: 4rem;
+  text-align: center;
+}
+
+.griS {
+  background-color: red;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.imgmainStock img {
+  width: 20rem;
+  height: 20rem;
+}
+
+.oferTas {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+  background-color: rgb(219, 213, 203);
+  height: 4rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.contacTan {
+  margin-left: 15rem;
+  margin-right: 15rem;
+  margin-bottom: 1rem;
+  background-color: rgb(197, 34, 34);
+  height: 14rem;
+  text-align: center;
+  color: white;
+}
+.contacTan img {
+  margin-top: 4rem;
+  height: 4rem;
+  width: 4rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 50% 3/4;
+  grid-template-areas: "item1 item2";
+}
+
+.item1 {
+  grid-area: item1;
+}
+
+.item2 {
+  grid-area: item2;
+}
+
+@media (max-width: 1024px) {
+  header {
+    background-color: red;
+    width: 100%;
+    padding: 0.1rem;
+    justify-content: space-between;
+    align-items: left;
+    text-align: right;
+  }
+  .navBar {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+    align-items: left;
+    text-align: right;
+  }
+  .navBar li a {
+    color: white;
+    text-decoration: none;
+  }
+  .navBar li img {
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .nombreL {
+    text-decoration: solid;
+    text-align: left;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    color: red;
+    font-size: 3rem;
+  }
+  .divN {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 1rem;
+  }
+  .imgL img {
+    border-image: none;
+    width: 400px;
+    height: 400px;
+  }
+  .buttoNa {
+    background-color: rgb(255, 0, 0);
+    height: 2rem;
+    width: 7rem;
+    text-align: center;
+    font-size: 15px;
+  }
+  .buttoNa a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
+  .buttoN {
+    background-color: black;
+    height: 2rem;
+    width: 7rem;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .imgmainStock img {
+    width: 15rem;
+    height: 15rem;
+  }
+  .oferTas {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    background-color: rgb(219, 213, 203);
+    height: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    background-color: rgb(219, 213, 203);
+    height: 4rem;
+    text-align: center;
+    font-size: 1, 5rem;
+  }
+  .imgF a img {
+    border-radius: 75%;
+    width: 2rem;
+    height: 2rem;
+    align-items: center;
+  }
+  .comprasBl {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    background-color: rgb(219, 213, 203);
+    height: 4rem;
+    text-align: center;
+  }
+  .mainComp {
+    font-size: 0.7rem;
+  }
+  .contacTan {
+    margin-left: 7rem;
+    margin-right: 7rem;
+    margin-bottom: 1rem;
+    background-color: rgb(197, 34, 34);
+    height: 7rem;
+    text-align: center;
+    color: white;
+  }
+  .contacTan img {
+    margin-top: 2rem;
+    height: 2rem;
+    width: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    background-color: red;
+    width: 100%;
+    padding: 0.1rem;
+    justify-content: space-between;
+    align-items: left;
+    text-align: right;
+  }
+  .navBar {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    align-items: left;
+    text-align: right;
+  }
+  .navBar li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  .navBar li img {
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .nombreL {
+    text-decoration: solid;
+    text-align: left;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    color: red;
+    font-size: 2rem;
+  }
+  .divN {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 1rem;
+  }
+  .imgL img {
+    border-image: none;
+    width: 300px;
+    height: 300px;
+  }
+  .buttoNa {
+    background-color: rgb(255, 0, 0);
+    height: 1rem;
+    width: 7rem;
+    text-align: center;
+    font-size: 12px;
+  }
+  .buttoNa a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
+  .buttoN {
+    background-color: black;
+    height: 1.5rem;
+    width: 7rem;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 15px;
+  }
+  .imgmainStock img {
+    width: 12rem;
+    height: 12rem;
+  }
+  .oferTas {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    background-color: rgb(219, 213, 203);
+    height: 2rem;
+    text-align: center;
+    font-size: 1.4rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    background-color: rgb(219, 213, 203);
+    height: 4rem;
+    text-align: center;
+    font-size: 1, 5rem;
+  }
+  .imgF a img {
+    border-radius: 75%;
+    width: 1rem;
+    height: 1rem;
+    align-items: center;
+  }
+  .comprasBl {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    background-color: rgb(219, 213, 203);
+    height: 2rem;
+    text-align: center;
+    font-size: 15px;
+  }
+  .mainComp {
+    font-size: 0.6rem;
+  }
+  .contacTan {
+    margin-left: 7rem;
+    margin-right: 7rem;
+    margin-bottom: 1rem;
+    background-color: rgb(197, 34, 34);
+    height: 10rem;
+    text-align: center;
+    color: white;
+  }
+  .contacTan img {
+    margin-top: 2rem;
+    height: 2rem;
+    width: 2rem;
+  }
+}
+@media (max-width: 425px) {
+  header {
+    background-color: red;
+    width: 100%;
+    padding: 0.1rem;
+    justify-content: space-between;
+    align-items: left;
+    text-align: right;
+  }
+  .navBar {
+    display: flex;
+    list-style: none;
+    gap: 0.6rem;
+    align-items: left;
+    text-align: right;
+    contain: content;
+  }
+  .navBar li a {
+    color: white;
+    text-decoration: none;
+    font-size: 11px;
+  }
+  .navBar li img {
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2, 5rem;
+  }
+  .imgL img {
+    border-image: none;
+    width: 200px;
+    height: 200px;
+  }
+}
+@media (max-width: 320px) {
+  header {
+    background-color: red;
+    width: 100%;
+    padding: 0.1rem;
+    justify-content: space-between;
+    align-items: left;
+    text-align: right;
+  }
+  .navBar {
+    display: flex;
+    list-style: none;
+    gap: 0.6rem;
+    align-items: left;
+    text-align: right;
+  }
+  .navBar li a {
+    color: white;
+    text-decoration: none;
+    font-size: 9px;
+  }
+  .navBar li img {
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2, 5rem;
+  }
+  .nombreL {
+    text-decoration: solid;
+    text-align: left;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    color: red;
+    font-size: 1.8rem;
+  }
+  .divN {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 1rem;
+  }
+  .buttoN {
+    background-color: black;
+    height: 1rem;
+    width: 5rem;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .buttoN a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 10px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
