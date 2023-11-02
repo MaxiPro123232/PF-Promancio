@@ -4,3 +4,13 @@ footer {
 	padding: 0.5rem;
 	justify-content: space-between;
 }
+.imgF {
+	a {
+		img {
+			border-radius: 50%;
+			width: 2rem;
+			height: 2rem;
+			align-items: center;
+		}
+	}
+}

@@ -1,0 +1,9 @@
+.griS {
+	background-color: $background-color_1;
+	margin-top: 2rem;
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
+.comprasBl {
+        @include caja;
+}

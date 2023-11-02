@@ -1,125 +1,25 @@
-$color_1: white;
-$color_2: red;
-$font-family_1: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-$font-family_2: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-$background-color_1: red;
-$background-color_2: black;
-$background-color_3: rgb(255, 0, 0);
-$background-color_4: rgb(219, 213, 203);
-$background-color_5: rgb(197, 34, 34);
-
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-.nombreL {
-	text-decoration: solid;
-	text-align: left;
-	font-family: $font-family_1;
-	color: $color_2;
-	font-size: 4rem;
-}
-.divN {
-	font-family: $font-family_2;
-	font-size: 2rem;
-}
-.imgL {
-	border-image: none;
-}
-.formuLari {
-	font-size: 2rem;
-}
-.buttoN {
-	background-color: $background-color_2;
-	height: 2rem;
-	width: 10rem;
-	text-align: center;
-	a {
-		color: $color_1;
-		text-align: center;
-		text-decoration: none;
-		padding-top: 1rem;
-		margin-top: 2rem;
-		font-size: 20px;
-	}
-}
-.imgF {
-	a {
-		img {
-			border-radius: 50%;
-			width: 2rem;
-			height: 2rem;
-			align-items: center;
-		}
-	}
-}
-
-.mainComp {
-	font-size: 1rem;
-}
-.buttoNa {
-	background-color: $background-color_3;
-	height: 2rem;
-	width: 10rem;
-	text-align: center;
-	a {
-		color: $color_1;
-		text-align: center;
-		text-decoration: none;
-	}
-}
-.comprasBl {
-	margin-left: 2rem;
-	margin-right: 2rem;
-	margin-bottom: 2rem;
-	background-color: $background-color_4;
-	height: 4rem;
-	text-align: center;
-}
-.griS {
-	background-color: $background-color_1;
-	margin-top: 2rem;
-	margin-left: 2rem;
-	margin-right: 2rem;
-}
-.imgmainStock {
-	img {
-		width: 20rem;
-		height: 20rem;
-	}
-}
-.oferTas {
-	margin-left: 2rem;
-	margin-right: 2rem;
-	margin-bottom: 1rem;
-	background-color: $background-color_4;
-	height: 4rem;
-	text-align: center;
-	font-size: 2rem;
-}
-.contacTan {
-	margin-left: 15rem;
-	margin-right: 15rem;
-	margin-bottom: 1rem;
-	background-color: $background-color_5;
-	height: 14rem;
-	text-align: center;
-	color: $color_1;
-	img {
-		margin-top: 4rem;
-		height: 4rem;
-		width: 4rem;
-	}
-}
-.grid-container {
-	display: grid;
-	grid-template-columns: 50% 3/4;
-	grid-template-areas: "item1 item2";
-}
-.item1 {
-	grid-area: item1;
-}
-.item2 {
-	grid-area: item2;
-}
+@import	"./base/reset";
+@import	"./base/typo";
+@import	"./components/bootstrap";
+@import	"./components/cards}";
+@import "./components/button-compras";
+@import "./components/button-main";
+@import "./components/caja-compras";
+@import "./components/caja-contactos";
+@import "./components/caja-stock";
+@import "./components/formulario";
+@import "./components/img-main-inicio";
+@import "./components/img-main-stock";
+@import "./layout/main-compras";
+@import "./layout/media/media1024";
+@import "./layout/media/media768";
+@import "./layout/media/media425";
+@import "./layout/media/media320";
+@import	"./layout/footer";
+@import	"./layout/header";
+@import	"./layout/main";
+@import	"./layout/navbar";
+@import	"./utilities/function";
+@import	"./utilities/maps";
+@import	"./utilities/mixins";
+@import	"./utilities/variables";
