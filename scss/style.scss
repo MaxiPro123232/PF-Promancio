@@ -1,3 +1,7 @@
+@import	"./utilities/function";
+@import	"./utilities/maps";
+@import	"./utilities/mixins";
+@import	"./utilities/variables";
 @import	"./base/reset";
 @import	"./base/typo";
 @import	"./components/bootstrap";
@@ -19,7 +23,3 @@
 @import	"./layout/header";
 @import	"./layout/main";
 @import	"./layout/navbar";
-@import	"./utilities/function";
-@import	"./utilities/maps";
-@import	"./utilities/mixins";
-@import	"./utilities/variables";

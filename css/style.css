@@ -1,33 +1,21 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 50% 3/4;
+  grid-template-areas: "item1 item2";
+}
+
+.item1 {
+  grid-area: item1;
+}
+
+.item2 {
+  grid-area: item2;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-header {
-  background-color: red;
-  width: 100%;
-  padding: 0.1rem;
-  justify-content: space-between;
-  align-items: center;
-  text-align: right;
-}
-
-.navBar {
-  display: flex;
-  list-style: none;
-  gap: 2.5rem;
-  align-items: center;
-  text-align: right;
-}
-.navBar li a {
-  color: white;
-  text-decoration: none;
-}
-.navBar li img {
-  border-radius: 50%;
-  width: 3.5rem;
-  height: 3.5rem;
 }
 
 .nombreL {
@@ -43,12 +31,16 @@ header {
   font-size: 2rem;
 }
 
-.imgL {
-  border-image: none;
+.buttoNa {
+  background-color: rgb(255, 0, 0);
+  height: 2rem;
+  width: 10rem;
+  text-align: center;
 }
-
-.formuLari {
-  font-size: 2rem;
+.buttoNa a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
 }
 
 .buttoN {
@@ -66,34 +58,11 @@ header {
   font-size: 20px;
 }
 
-.imgF a img {
-  border-radius: 50%;
-  width: 2rem;
-  height: 2rem;
-  align-items: center;
-}
-
-footer {
-  width: 100%;
-  text-align: right;
-  padding: 0.5rem;
-  justify-content: space-between;
-}
-
-.mainComp {
-  font-size: 1rem;
-}
-
-.buttoNa {
-  background-color: rgb(255, 0, 0);
-  height: 2rem;
-  width: 10rem;
-  text-align: center;
-}
-.buttoNa a {
-  color: white;
-  text-align: center;
-  text-decoration: none;
+.griS {
+  background-color: red;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .comprasBl {
@@ -103,28 +72,6 @@ footer {
   background-color: rgb(219, 213, 203);
   height: 4rem;
   text-align: center;
-}
-
-.griS {
-  background-color: red;
-  margin-top: 2rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-
-.imgmainStock img {
-  width: 20rem;
-  height: 20rem;
-}
-
-.oferTas {
-  margin-left: 2rem;
-  margin-right: 2rem;
-  margin-bottom: 1rem;
-  background-color: rgb(219, 213, 203);
-  height: 4rem;
-  text-align: center;
-  font-size: 2rem;
 }
 
 .contacTan {
@@ -142,18 +89,31 @@ footer {
   width: 4rem;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 50% 3/4;
-  grid-template-areas: "item1 item2";
+.oferTas {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+  background-color: rgb(219, 213, 203);
+  height: 4rem;
+  text-align: center;
+  font-size: 2rem;
 }
 
-.item1 {
-  grid-area: item1;
+.formuLari {
+  font-size: 2rem;
 }
 
-.item2 {
-  grid-area: item2;
+.imgL {
+  border-image: none;
+}
+
+.imgmainStock img {
+  width: 20rem;
+  height: 20rem;
+}
+
+.mainComp {
+  font-size: 1rem;
 }
 
 @media (max-width: 1024px) {
@@ -466,6 +426,45 @@ footer {
     text-decoration: none;
     font-size: 10px;
   }
+}
+footer {
+  width: 100%;
+  text-align: right;
+  padding: 0.5rem;
+  justify-content: space-between;
+}
+
+.imgF a img {
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  align-items: center;
+}
+
+header {
+  background-color: red;
+  width: 100%;
+  padding: 0.1rem;
+  justify-content: space-between;
+  align-items: center;
+  text-align: right;
+}
+
+.navBar {
+  display: flex;
+  list-style: none;
+  gap: 2.5rem;
+  align-items: center;
+  text-align: right;
+}
+.navBar li a {
+  color: white;
+  text-decoration: none;
+}
+.navBar li img {
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
