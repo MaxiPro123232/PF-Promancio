@@ -1,0 +1,53 @@
+@media (max-width: 320px) {
+	header {
+		background-color: $background-color_1;
+		width: 100%;
+		padding: 0.1rem;
+		justify-content: space-between;
+		align-items: left;
+		text-align: right;
+	}
+	.navBar {
+		display: flex;
+		list-style: none;
+		gap: 0.60rem;
+		align-items: left;
+		text-align: right;
+		li {
+			a {
+				color: $color_1;
+				text-decoration: none;
+				font-size: 9px;
+			}
+			img {
+				border-radius: 50%;
+				width: 2.5rem;
+				height: 2,5rem;
+			}
+		}
+	}
+	.nombreL {
+		text-decoration: solid;
+		text-align: left;
+		font-family: $font-family_1;
+		color: $color_2;
+		font-size: 1.8rem;
+	}
+	.divN {
+		font-family: $font-family_2;
+		font-size: 1rem;
+	}
+	.buttoN {
+		background-color: $background-color_2;
+		height: 1rem;
+		width: 5rem;
+		text-align: center;
+		margin-top: 1rem;
+		a {
+			color: $color_1;
+			text-align: center;
+			text-decoration: none;
+			font-size: 10px;
+		}
+	}
+}

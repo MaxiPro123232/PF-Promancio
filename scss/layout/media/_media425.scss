@@ -1,0 +1,37 @@
+@media (max-width: 425px) {
+	header {
+		background-color: $background-color_1;
+		width: 100%;
+		padding: 0.1rem;
+		justify-content: space-between;
+		align-items: left;
+		text-align: right;
+	}
+	.navBar {
+		display: flex;
+		list-style: none;
+		gap: 0.60rem;
+		align-items: left;
+		text-align: right;
+		contain: content;
+		li {
+			a {
+				color: $color_1;
+				text-decoration: none;
+				font-size: 11px;
+			}
+			img {
+				border-radius: 50%;
+				width: 2.5rem;
+				height: 2,5rem;
+			}
+		}
+	}
+	.imgL {
+		img {
+			border-image: none;
+			width: 200px;
+			height: 200px;
+		}
+	}
+}
