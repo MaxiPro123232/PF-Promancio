@@ -1,11 +1,31 @@
 .grid-container {
 	display: grid;
 	grid-template-columns: 50% 3/4;
-	grid-template-areas: "item1 item2";
+	grid-template-areas: 
+	"item1 item2"
+	"item1 item2"
+	;
+}
+.grid-container2{
+	display: grid;
+	grid-template-rows: 300px 300px;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 5px;
+	grid-template-areas: 
+	"area1 area2";
 }
 .item1 {
 	grid-area: item1;
 }
 .item2 {
 	grid-area: item2;
+}
+
+.gridi1{
+	grid-area: area1;
+	margin-left: 10px;
+}
+.gridi2{
+	grid-area: area2;
+	margin-left: 10px;
 }

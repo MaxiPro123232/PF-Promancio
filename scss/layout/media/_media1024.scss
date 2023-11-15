@@ -39,8 +39,8 @@
 	.imgL {
 		img {
 			border-image: none;
-			width: 400px;
-			height: 400px;
+			width: 500px;
+			height: 350px;
 		}
 	}
 	.buttoNa {
@@ -106,13 +106,14 @@
 		font-size: 0.7rem;
 	}
 	.contacTan {
-		margin-left: 7rem;
-		margin-right: 7rem;
+		margin-left: 5rem;
+		margin-right: 5rem;
 		margin-bottom: 1rem;
 		background-color: $background-color_5;
 		height: 7rem;
 		text-align: center;
 		color: $color_1;
+		text-align: center;
 		img {
 			margin-top: 2rem;
 			height: 2rem;
