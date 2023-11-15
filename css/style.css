@@ -1,7 +1,15 @@
 .grid-container {
   display: grid;
   grid-template-columns: 50% 3/4;
-  grid-template-areas: "item1 item2";
+  grid-template-areas: "item1 item2" "item1 item2";
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-rows: 300px 300px;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px;
+  grid-template-areas: "area1 area2";
 }
 
 .item1 {
@@ -10,6 +18,16 @@
 
 .item2 {
   grid-area: item2;
+}
+
+.gridi1 {
+  grid-area: area1;
+  margin-left: 10px;
+}
+
+.gridi2 {
+  grid-area: area2;
+  margin-left: 10px;
 }
 
 * {
@@ -24,11 +42,15 @@
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: red;
   font-size: 4rem;
+  margin-top: 20px;
+  margin-left: 30px;
 }
 
 .divN {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 2rem;
+  font-size: 25px;
+  margin-top: 20px;
+  margin-left: 30px;
 }
 
 .navBar {
@@ -49,10 +71,14 @@
 }
 
 footer {
+  background-color: black;
+  position: absolute;
+  bottom: 0;
   width: 100%;
+  left: 0;
+  height: 40px;
+  color: white;
   text-align: right;
-  padding: 0.5rem;
-  justify-content: space-between;
 }
 
 .imgF a img {
@@ -71,15 +97,12 @@ header {
   text-align: right;
 }
 
-.imgL {
-  border-image: none;
-}
-
 .buttoNa {
   background-color: rgb(255, 0, 0);
   height: 2rem;
   width: 10rem;
   text-align: center;
+  margin-left: 10px;
 }
 .buttoNa a {
   color: white;
@@ -89,9 +112,10 @@ header {
 
 .buttoN {
   background-color: black;
-  height: 2rem;
-  width: 10rem;
+  height: 30px;
+  width: 200px;
   text-align: center;
+  margin-left: 30px;
 }
 .buttoN a {
   color: white;
@@ -133,6 +157,12 @@ header {
   width: 4rem;
 }
 
+.Card img {
+  width: 200px;
+  height: 200px;
+  border: solid black;
+}
+
 .oferTas {
   margin-left: 2rem;
   margin-right: 2rem;
@@ -143,17 +173,19 @@ header {
   font-size: 2rem;
 }
 
-.formuLari {
-  font-size: 2rem;
+.FormuLari {
+  font-size: 1rem;
+  margin-left: 10px;
 }
-
-.imgmainStock img {
-  width: 20rem;
-  height: 20rem;
+.FormuLari input {
+  margin-top: 5px;
 }
 
 .mainComp {
   font-size: 1rem;
+}
+.mainComp h1 {
+  margin-left: 10px;
 }
 
 @media (max-width: 1024px) {
@@ -194,8 +226,8 @@ header {
   }
   .imgL img {
     border-image: none;
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 350px;
   }
   .buttoNa {
     background-color: rgb(255, 0, 0);
@@ -254,13 +286,14 @@ header {
     font-size: 0.7rem;
   }
   .contacTan {
-    margin-left: 7rem;
-    margin-right: 7rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
     margin-bottom: 1rem;
     background-color: rgb(197, 34, 34);
     height: 7rem;
     text-align: center;
     color: white;
+    text-align: center;
   }
   .contacTan img {
     margin-top: 2rem;
@@ -300,10 +333,12 @@ header {
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     color: red;
     font-size: 2rem;
+    margin-left: 10px;
   }
   .divN {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    font-size: 1rem;
+    font-size: 12px;
+    margin-left: 10px;
   }
   .imgL img {
     border-image: none;
@@ -329,6 +364,7 @@ header {
     text-align: center;
     margin-top: 1rem;
     font-size: 15px;
+    margin-left: 10px;
   }
   .imgmainStock img {
     width: 12rem;
@@ -447,11 +483,13 @@ header {
     text-align: left;
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     color: red;
-    font-size: 1.8rem;
+    font-size: 25px;
+    margin-left: 10px;
   }
   .divN {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    font-size: 1rem;
+    font-size: 9px;
+    margin-left: 10px;
   }
   .buttoN {
     background-color: black;
@@ -459,12 +497,22 @@ header {
     width: 5rem;
     text-align: center;
     margin-top: 1rem;
+    margin-left: 10px;
   }
   .buttoN a {
     color: white;
     text-align: center;
     text-decoration: none;
     font-size: 10px;
+  }
+  .imgL img {
+    border-image: none;
+    width: 200px;
+    height: 150px;
+  }
+  .contacTan {
+    margin-left: 4rem;
+    margin-right: 4rem;
   }
 }
 
